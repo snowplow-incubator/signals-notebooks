@@ -1207,8 +1207,8 @@ pydantic = "^2.10.5"
 [package.source]
 type = "git"
 url = "git@github.com:snowplow-incubator/snowplow-signals-sdk.git"
-reference = "0.0.1"
-resolved_reference = "65c7d5bb9153b0254a55b9664be5eb9d935aeefe"
+reference = "0.0.2-rc1"
+resolved_reference = "4ee2e6195d06dfa5ed53bb8761e787aeeea95fad"
 
 [[package]]
 name = "snowplow-tracker"
@@ -1335,4 +1335,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "bdca51ebf3844710111a3dba63f871adf1bccd04250c04ed08e4976268d21542"
+content-hash = "d402afef5c8c237d41b233b5c183d4405dfc1a7694e6ead2c19ea9131258606e"
