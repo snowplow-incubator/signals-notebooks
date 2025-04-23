@@ -1,6 +1,6 @@
 # Signals noteboooks
 
-Notebooks for testing the Signals stream and batch feature generation.
+Notebooks for testing the Signals stream and batch generation.
 
 ## Usage
 
