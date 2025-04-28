@@ -34,6 +34,12 @@ In the Colab interface, click “GitHub,” enter the GitHub URL, and hit the se
 #### Step 4: Open the Notebook
 Select the repository, the branch and the Jupyter notebook you want to open.
 
+#### Step 5: Add Secrets to the Notebook
+Add your environment secrets to the notebook, and make them availble to the environment.
+
+![add secrets](images/add_secrets.png)
+
+
 #### Step 5: Run the Notebook
 With the notebook directory open, you can run the notebook cells just as you would in a local Jupyter notebook.
 
