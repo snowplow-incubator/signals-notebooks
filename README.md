@@ -19,10 +19,10 @@ poetry install --no-root
 To run these notebooks using Google Colab, follow these steps:
 
 #### Step 1: Copy the GitHub Repository Link
-Start by copying the link to the GitHub repository containing the notebook you want to run. Visit the GitHub repository, click the green “Code” button, and select “Copy” to copy the repository link.
+Start by copying the link to the GitHub repository containing the notebook you want to run. Click the green “Code” button, and select “Copy” to copy the repository link.
 
 #### Step 2: Access Google Colab
-Open Google Colab in your web browser at colab.research.google.com. Sign in to your Google account if you’re not already logged in.
+Open Google Colab in your web browser at [colab.research.google.com](colab.research.google.com). Sign in to your Google account if you’re not already logged in.
 
 #### Step 3: Connect to the GitHub Repository
 In the Colab interface, click “GitHub,” enter the GitHub URL, and hit the search icon.
