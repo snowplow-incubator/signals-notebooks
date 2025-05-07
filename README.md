@@ -24,7 +24,7 @@ Start by copying the link to the GitHub repository containing the notebook you w
 **Note: You must use the HTTPS link to the repo**
 
 #### Step 2: Access Google Colab
-Open Google Colab in your web browser at [colab.research.google.com](colab.research.google.com). Sign in to your Google account if you’re not already logged in.
+Open Google Colab in your web browser at [colab.research.google.com](https://colab.research.google.com/). Sign in to your Google account if you’re not already logged in.
 
 #### Step 3: Connect to the GitHub Repository
 In the Colab interface, click “GitHub,” enter the GitHub URL, and hit the search icon.
