@@ -1277,14 +1277,14 @@ files = [
 
 [[package]]
 name = "snowplow-signals"
-version = "0.0.6"
+version = "0.0.7"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 groups = ["main"]
 files = [
-    {file = "snowplow_signals-0.0.6-py3-none-any.whl", hash = "sha256:557e82095bd1b8f75438b85094b1f588a1c6c202db3c3635dd768b0a1e52e94b"},
-    {file = "snowplow_signals-0.0.6.tar.gz", hash = "sha256:2081556a4b3f9d47d04338b3c18d1ae1c54ac925ca4810551b0b9e096a45a4b0"},
+    {file = "snowplow_signals-0.0.7-py3-none-any.whl", hash = "sha256:2e8a80a137a7e0f4ece698f9dcfeb86ceaaa6717536b9333cbdbd6bdc631c759"},
+    {file = "snowplow_signals-0.0.7.tar.gz", hash = "sha256:21ad458c63517ea0d4d31640ee29afa98b12c2bbd5de50462177e733bf9c2e9e"},
 ]
 
 [package.dependencies]
@@ -1294,7 +1294,7 @@ pydantic = ">=2.10.5,<3.0.0"
 pyjwt = ">=2.10.1,<3.0.0"
 
 [package.extras]
-batch-engine = ["jinja2 (>=3.1.6,<4.0.0)", "typer (>=0.15.2,<0.16.0)"]
+batch-engine = ["jinja2 (>=3.1.6,<4.0.0)", "sqlglot (>=26.16.4,<27.0.0)", "typer (>=0.15.2,<0.16.0)"]
 
 [[package]]
 name = "snowplow-tracker"
@@ -1444,4 +1444,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "7f00d3dc12ee3cc0a80e5173553ffb665497e6f17f847f31ee3f1214e1512d2f"
+content-hash = "c3e29d925fefed215c06b8d89417fcc4fe81f873be716fc6067e7cd7894f8b71"
