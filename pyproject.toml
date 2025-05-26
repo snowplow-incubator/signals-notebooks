@@ -8,10 +8,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 pandas = "^2.2.3"
-snowplow-signals = "^0.1.1"
+snowplow-signals = { git = "git@github.com:snowplow-incubator/snowplow-signals-sdk.git", branch = "feature/aisp-362-interventions-management-in-sdk" }
 ipykernel = "^6.29.5"
 snowplow-tracker = "^1.1.0"
 python-dotenv = "^1.1.0"
+sseclient-py = "^1.8.0"
 
 
 [build-system]
