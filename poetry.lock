@@ -338,43 +338,6 @@ files = [
 ]
 
 [[package]]
-name = "dnspython"
-version = "2.7.0"
-description = "DNS toolkit"
-optional = false
-python-versions = ">=3.9"
-groups = ["main"]
-files = [
-    {file = "dnspython-2.7.0-py3-none-any.whl", hash = "sha256:b4c34b7d10b51bcc3a5071e7b8dee77939f1e878477eeecc965e9835f63c6c86"},
-    {file = "dnspython-2.7.0.tar.gz", hash = "sha256:ce9c432eda0dc91cf618a5cedf1a4e142651196bbcd2c80e89ed5a907e5cfaf1"},
-]
-
-[package.extras]
-dev = ["black (>=23.1.0)", "coverage (>=7.0)", "flake8 (>=7)", "hypercorn (>=0.16.0)", "mypy (>=1.8)", "pylint (>=3)", "pytest (>=7.4)", "pytest-cov (>=4.1.0)", "quart-trio (>=0.11.0)", "sphinx (>=7.2.0)", "sphinx-rtd-theme (>=2.0.0)", "twine (>=4.0.0)", "wheel (>=0.42.0)"]
-dnssec = ["cryptography (>=43)"]
-doh = ["h2 (>=4.1.0)", "httpcore (>=1.0.0)", "httpx (>=0.26.0)"]
-doq = ["aioquic (>=1.0.0)"]
-idna = ["idna (>=3.7)"]
-trio = ["trio (>=0.23)"]
-wmi = ["wmi (>=1.5.1)"]
-
-[[package]]
-name = "email-validator"
-version = "2.2.0"
-description = "A robust email address syntax and deliverability validation library."
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-files = [
-    {file = "email_validator-2.2.0-py3-none-any.whl", hash = "sha256:561977c2d73ce3611850a06fa56b414621e0c8faa9d66f2611407d87465da631"},
-    {file = "email_validator-2.2.0.tar.gz", hash = "sha256:cb690f344c617a714f22e66ae771445a1ceb46821152df8e165c5f9a364582b7"},
-]
-
-[package.dependencies]
-dnspython = ">=2.0.0"
-idna = ">=2.0.0"
-
-[[package]]
 name = "executing"
 version = "2.2.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -938,7 +901,6 @@ files = [
 
 [package.dependencies]
 annotated-types = ">=0.6.0"
-email-validator = {version = ">=2.0.0", optional = true, markers = "extra == \"email\""}
 pydantic-core = "2.33.2"
 typing-extensions = ">=4.12.2"
 typing-inspection = ">=0.4.0"
@@ -1315,24 +1277,28 @@ files = [
 
 [[package]]
 name = "snowplow-signals"
-version = "0.1.1"
+version = "0.0.7"
 description = ""
 optional = false
-python-versions = "<4.0,>=3.11"
+python-versions = "^3.11"
 groups = ["main"]
-files = [
-    {file = "snowplow_signals-0.1.1-py3-none-any.whl", hash = "sha256:7207430944204a855c94c00cbef667027fd6e612df83cd09b951a235ebc59282"},
-    {file = "snowplow_signals-0.1.1.tar.gz", hash = "sha256:c2079323642bb169a879f6755e2b33ebe5b07202f72525e67c5e9612d199af24"},
-]
+files = []
+develop = false
 
 [package.dependencies]
-httpx = ">=0.28.1,<0.29.0"
-pandas = ">=2.2.0,<3.0.0"
-pydantic = {version = ">=2.11.4,<3.0.0", extras = ["email"]}
-pyjwt = ">=2.10.1,<3.0.0"
+httpx = "^0.28.1"
+pandas = "^2.2.0"
+pydantic = "^2.10.5"
+pyjwt = "^2.10.1"
 
 [package.extras]
 batch-engine = ["jinja2 (>=3.1.6,<4.0.0)", "sqlglot (>=26.16.4,<27.0.0)", "typer (>=0.15.2,<0.16.0)"]
+
+[package.source]
+type = "git"
+url = "ssh://git@github.com/snowplow-incubator/snowplow-signals-sdk.git"
+reference = "feature/aisp-362-interventions-management-in-sdk"
+resolved_reference = "9038233b9ae2cb7eb2fa277964b6d7617b527ec6"
 
 [[package]]
 name = "snowplow-tracker"
@@ -1352,6 +1318,18 @@ typing-extensions = ">=3.7.4"
 
 [package.extras]
 typing = ["mypy (>=0.971)", "types-requests (>=2.25.1,<3.0)"]
+
+[[package]]
+name = "sseclient-py"
+version = "1.8.0"
+description = "SSE client for Python"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "sseclient-py-1.8.0.tar.gz", hash = "sha256:c547c5c1a7633230a38dc599a21a2dc638f9b5c297286b48b46b935c71fac3e8"},
+    {file = "sseclient_py-1.8.0-py2.py3-none-any.whl", hash = "sha256:4ecca6dc0b9f963f8384e9d7fd529bf93dd7d708144c4fb5da0e0a1a926fee83"},
+]
 
 [[package]]
 name = "stack-data"
@@ -1482,4 +1460,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "dc205a300dc274ba72df970315f7ee8f1239d4098e95bdde79867889cd18c2e3"
+content-hash = "4731f777a42d9060f23cbd7e527f7178946e59b973a9c5350fe1467f4c180fce"
