@@ -2,6 +2,9 @@
 
 Notebooks for testing the Signals stream and batch attribute generation.
 
+## Repository owner
+@snowplow-incubator/com-snowplowanalytics-engineering-digital_analytics
+
 ## Usage
 
 1. Install poetry
@@ -43,4 +46,5 @@ Add your environment secrets to the notebook, and make them availble to the envi
 #### Step 5: Run the Notebook
 With the notebook directory open, you can run the notebook cells just as you would in a local Jupyter notebook.
 
-
+## Repository owner
+@snowplow-incubator/com-snowplowanalytics-engineering-digital_analytics
