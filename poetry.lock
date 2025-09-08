@@ -1343,14 +1343,14 @@ files = [
 
 [[package]]
 name = "snowplow-signals"
-version = "0.1.5"
+version = "0.3.0"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 groups = ["main"]
 files = [
-    {file = "snowplow_signals-0.1.5-py3-none-any.whl", hash = "sha256:8d39e43c8184c08ea341e30100305842ebfb8737b76b631437723e4dafe49891"},
-    {file = "snowplow_signals-0.1.5.tar.gz", hash = "sha256:8df994b9fc6c0745af8ba7cc182fa18505e4f18f19011b69d86dfb4353b9c363"},
+    {file = "snowplow_signals-0.3.0-py3-none-any.whl", hash = "sha256:953a365a85c422dbb9b15281f6cec3b0dd5af7e23da1d3a71f4aa3a8ce2e6dd4"},
+    {file = "snowplow_signals-0.3.0.tar.gz", hash = "sha256:18a881d9c9805bda22efaae2f755b976807f51a27ee0395cb76ebf79ff3e1d90"},
 ]
 
 [package.dependencies]
@@ -1511,4 +1511,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "dcc171146bfca9d75c421e13352bc5f959dd318bf3dbc7b3ec5ef315ba179254"
+content-hash = "fa00bf1074d082d426e5db9c3eb380a22b643681d0f277bb5738db39e46d1307"
