@@ -565,6 +565,22 @@ qa = ["flake8 (==5.0.4)", "mypy (==0.971)", "types-setuptools (==67.2.0.1)"]
 testing = ["Django", "attrs", "colorama", "docopt", "pytest (<9.0.0)"]
 
 [[package]]
+name = "jsonpath-ng"
+version = "1.7.0"
+description = "A final implementation of JSONPath for Python that aims to be standard compliant, including arithmetic and binary comparison operators and providing clear AST for metaprogramming."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "jsonpath-ng-1.7.0.tar.gz", hash = "sha256:f6f5f7fd4e5ff79c785f1573b394043b39849fb2bb47bcead935d12b00beab3c"},
+    {file = "jsonpath_ng-1.7.0-py2-none-any.whl", hash = "sha256:898c93fc173f0c336784a3fa63d7434297544b7198124a68f9a3ef9597b0ae6e"},
+    {file = "jsonpath_ng-1.7.0-py3-none-any.whl", hash = "sha256:f3d7f9e848cba1b6da28c55b1c26ff915dc9e0b1ba7e752a53d6da8d5cbd00b6"},
+]
+
+[package.dependencies]
+ply = "*"
+
+[[package]]
 name = "jupyter-client"
 version = "8.6.3"
 description = "Jupyter protocol implementation and client libraries"
@@ -843,6 +859,18 @@ files = [
 docs = ["furo (>=2024.8.6)", "proselint (>=0.14)", "sphinx (>=8.1.3)", "sphinx-autodoc-typehints (>=3)"]
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=8.3.4)", "pytest-cov (>=6)", "pytest-mock (>=3.14)"]
 type = ["mypy (>=1.14.1)"]
+
+[[package]]
+name = "ply"
+version = "3.11"
+description = "Python Lex & Yacc"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "ply-3.11-py2.py3-none-any.whl", hash = "sha256:096f9b8350b65ebd2fd1346b12452efe5b9607f7482813ffca50c22722a807ce"},
+    {file = "ply-3.11.tar.gz", hash = "sha256:00c7c1aaa88358b9c765b6d3000c6eec0ba42abca5351b095321aef446081da3"},
+]
 
 [[package]]
 name = "prompt-toolkit"
@@ -1315,18 +1343,19 @@ files = [
 
 [[package]]
 name = "snowplow-signals"
-version = "0.1.3"
+version = "0.3.0"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.11"
 groups = ["main"]
 files = [
-    {file = "snowplow_signals-0.1.3-py3-none-any.whl", hash = "sha256:302f0eff2eaa683cdbb499b53f3966578071a28913edc8f94eb60f3e8fefb6b3"},
-    {file = "snowplow_signals-0.1.3.tar.gz", hash = "sha256:d84ac29c7c09f4f70c612f2b9755f8cbc3a73734eadd96c7dd284214acd3f285"},
+    {file = "snowplow_signals-0.3.0-py3-none-any.whl", hash = "sha256:953a365a85c422dbb9b15281f6cec3b0dd5af7e23da1d3a71f4aa3a8ce2e6dd4"},
+    {file = "snowplow_signals-0.3.0.tar.gz", hash = "sha256:18a881d9c9805bda22efaae2f755b976807f51a27ee0395cb76ebf79ff3e1d90"},
 ]
 
 [package.dependencies]
 httpx = ">=0.28.1,<0.29.0"
+jsonpath-ng = ">=1.7.0,<2.0.0"
 pandas = ">=2.2.0,<3.0.0"
 pydantic = {version = ">=2.11.4,<3.0.0", extras = ["email"]}
 pyjwt = ">=2.10.1,<3.0.0"
@@ -1482,4 +1511,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "1878965529e1dff1f1fa02c5768d0e11995cc9dc88e0a3dcc902ccf2c7e376c5"
+content-hash = "fa00bf1074d082d426e5db9c3eb380a22b643681d0f277bb5738db39e46d1307"
